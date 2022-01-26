@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+.corpo{
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.pagina{
+    width: 414px;
+    margin: 96px 0px 108px 0px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+}
+.cardapio{
+    margin: 27px 0px 0px 3px;
+    background-color: rgb(192, 192, 192);
+}
+h2{
+    margin:0px 0px 17px 16px;
+}
+.alimentos{
+    display: flex;
+    background-color: violet;
+    overflow: scroll;
+}
+.alimento{
+    width: 172px;
+    height: 202px;
+    margin-left: 16px;
+    background-color: yellow;
+    padding: 18px 14px 18px;
+    border-radius: 9px;
+}
+img{
+    width: 144px;
+    height: 87px;
+}
+footer{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(255, 0, 0);
+    bottom: 0;
+    left: 0;
+}
