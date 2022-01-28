@@ -43,8 +43,9 @@ h2{
     height: 202px;
     margin-left: 16px;
     background-color: yellow;
-    padding: 18px 14px 18px;
+    padding: 18px 8px 18px 8px;
     border-radius: 9px;
+    border: 6px solid red;
 }
 img{
     width: 144px;
@@ -60,4 +61,7 @@ footer{
     background-color: rgb(255, 0, 0);
     bottom: 0;
     left: 0;
+}
+.escolhido{
+    border: 6px solid green;
 }
