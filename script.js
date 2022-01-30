@@ -1,4 +1,4 @@
-let comidaPronta=false, bebidaPronta=false, sobremesaPronta=false,precoComida=0, precoBebida=0, PrecoSobremesa=0,total=0, nomeCliente="", endereco="";
+let comidaPronta=false, bebidaPronta=false, sobremesaPronta=false,precoComida=0, precoBebida=0, PrecoSobremesa=0,total=0, nomeCliente="", endereco="", sabor="";
 
 let mensagem="";
 
@@ -73,12 +73,22 @@ function conferirPedido(){
     conferindo.classList.remove("escondido");
     nomeCliente = prompt("Quel é o seu nome ?");
     endereco = prompt("Qual é o seu endereço ?");
+    if(pratosEscolhidos[1].innerHTML === "Suco"){
+        sabor = prompt("Qual sabor de suco você quer ?\nSabores: laranja, goiaba, abacaxi, maracujá")
+    }
+    else if(pratosEscolhidos[1].innerHTML === "Refrigerante"){
+        sabor = prompt("Qual sabor de refrigerante você quer ?\nSabores: Coca cola, fanta laranja, fanta uva ou guaraná")
+    }
+    else{
+        sabor = "normal"
+    }
 }
 function cancelar(){
     conferindo.classList.add("escondido");
 }
 function confirmar(){
-    mensagem="De "+nomeCliente+"\n"+"Eu gostaria de pedir os seguintes produtos: 1x sanduiche: "+pratosEscolhidos[0].innerHTML+", 1x "+pratosEscolhidos[1].innerHTML+" e 1x "+pratosEscolhidos[2].innerHTML+", para o endereço: "+endereco;
-    alert(mensagem);
+    mensagem="De "+nomeCliente+"\n"+"Eu gostaria de pedir os seguintes produtos: 1x sanduiche: "+pratosEscolhidos[0].innerHTML+", 1x "+pratosEscolhidos[1].innerHTML+" /"+sabor+" e 1x "+pratosEscolhidos[2].innerHTML+", para o endereço: "+endereco;
+    let encoded = encodeURIComponent(mensagem);
+    window.open("https://wa.me/+5562995445555?text="+encoded);
 }
 
