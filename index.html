@@ -8,86 +8,146 @@
 
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="estilos.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-    <div class="corpo">
+    <main>
         <header>
-
+            <div class="topo">
+                <h1>DrivenEats</h1>
+                <p>Sua comida em 6 minutos</p>
+            </div>
         </header>
 
 
         <div class="pagina">
             <section class="cardapio">
-                <h2>comidas:</h2>
-                <div class="alimentos">
-                    <div class="alimento picanha comida" 
-                    onclick="escolherComida('.picanha')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>picanha</p>
+                <h2>Primeiro, seu prato:</h2>
+                <div class="alimentos comida">
+                    <div class="alimento Completo" 
+                    onclick="escolherComida(this,25,'Completo')">
+                        <img src="Imagens/Bacon.png" alt="">
+                        <h3>Completo</h3>
+                        <p class="info">O mais completo e saboroso hamburger!</p>
+                        <p class="preco">R$ 25,00</p>
                     </div> 
 
-                    <div class="alimento frango comida" 
-                    onclick="escolherComida('.frango')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>frango</p>
+                    <div class="alimento Frango" 
+                    onclick="escolherComida(this,23,'Frango')">
+                        <img src="Imagens/frango.png" alt="">
+                        <h3>Frango</h3>
+                        <p class="info">Para aqueles que gostam de frango</p>
+                        <p class="preco">R$ 23,00</p>
                     </div>
 
-                    <div class="alimento peixe comida" 
-                    onclick="escolherComida('.peixe')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>peixe</p>
+                    <div class="alimento Hamburguer" 
+                    onclick="escolherComida(this,21,'Hamburger')">
+                        <img src="Imagens/kids.png" alt="">
+                        <h3>Hamburguer</h3>
+                        <p class="info">Com bastante cheddar</p>
+                        <p class="preco">R$ 21,00</p>
                     </div>
                 </div>
             </section>
             <section class="cardapio">
-                <h2>bebidas:</h2>
-                <div class="alimentos">
-                    <div class="alimento coca bebida" 
-                    onclick="escolherBebida('.coca')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>coca</p>
+                <h2>Agora, sua bebida:</h2>
+                <div class="alimentos bebida">
+                    <div class="alimento Refrigerantes" 
+                    onclick="escolherBebida(this,8,'Refrigerante')">
+                        <img src="Imagens/Refrigerantes.png" alt="">
+                        <h3>Refrigerantes</h3>
+                        <p class="info"> 700ml de Refrigerantes</p>
+                        <p class="preco">R$ 8,00</p>
+                        <p></p>
                     </div>
-                    <div class="alimento fanta bebida"
-                    onclick="escolherBebida('.fanta')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>fanta</p>
+                    <div class="alimento Sucos"
+                    onclick="escolherBebida(this,9,'Suco')">
+                        <img src="Imagens/Suco_laranja.png" alt="">
+                        <h3>Sucos</h3>
+                        <p class="info"> 700ml de suco natural</p>
+                        <p class="preco">R$ 9,00</p>
+                        <p></p>
                     </div>
-                    <div class="alimento mineiro bebida"
-                    onclick="escolherBebida('.mineiro')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>meneiro</p>
+                    <div class="alimento chopp"
+                    onclick="escolherBebida(this,12,'chopp')">
+                        <img src="Imagens/chopp.png" alt="">
+                        <h3>chopp</h3>
+                        <p class="info"> 700ml do melhor chopp</p>
+                        <p class="preco">R$ 12,00</p>
+                        <p></p>
                     </div>
                 </div>
             </section>
             <section class="cardapio">
-                <h2>sobremesas:</h2>
-                <div class="alimentos">
-                    <div class="alimento milkshake sobremesa"
-                    onclick="escolherSobremesa('.milkshake')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>milkshake</p>
+                <h2>Por fim, sua sobremesa:</h2>
+                <div class="alimentos sobremesa">
+                    <div class="alimento Milkshake"
+                    onclick="escolherSobremesa(this,11,'Milkshake')">
+                        <img src="Imagens/Milkshake.png" alt="">
+                        <h3>Milkshake</h3>
+                        <p class="info"> 700ml de Milkshake</p>
+                        <p class="preco">R$ 11,00</p>
+                        <p></p>
                     </div>
-                    <div class="alimento sorvete sobremesa"
-                    onclick="escolherSobremesa('.sorvete')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>sorvete</p>
+                    <div class="alimento PetitGateau"
+                    onclick="escolherSobremesa(this,14,'PetitGateau')">
+                        <img src="Imagens/PetitGateau.png" alt="">
+                        <h3>PetitGateau</h3>
+                        <p class="info"> Delicioso PetitGateau</p>
+                        <p class="preco">R$ 14,00</p>
+                        <p></p>
                     </div>
-                    <div class="alimento pudinho sobremesa"
-                    onclick="escolherSobremesa('.pudinho')">
-                        <img src="panqueca.jpeg" alt="">
-                        <p>pudinho</p>
+                    <div class="alimento Sundae"
+                    onclick="escolherSobremesa(this,10,'Sundae')">
+                        <img src="Imagens/Sundae.png" alt="">
+                        <h3>Sundae</h3>
+                        <p class="info"> 500ml de Sundae</p>
+                        <p class="preco">R$ 10,00</p>
+                        <p></p>
                     </div>
                 </div>
             </section>
         </div>
 
+        <section class="conferirPedido animacao escondido">
+            <div class="conferindo animacao">
+                <h2><strong>Confirme seu pedido</strong></h2>
+                <div class="detalhesPedido">
+                    <div class="pratosEscolhidos">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <strong><p></p></strong>
+                    </div>
+                    <div class="valoresFinais">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <strong><p></p></strong>
+                    </div>
+                </div>
+                <button class="tudoCerto" onclick="confirmar()"> Tudo certo, pode pedir!</button>
+                <button class="cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
+        </section>
+
+        <section class="sacola animacao2 escondido">
+            <ion-icon name="cart" class="carrinho"></ion-icon>
+            <p>valor</p>
+        </section>
 
         <footer>
-
+            <button class="botaoConfirmar" disabled onclick="conferirPedido()">
+                Selecione 3 itens <br>para fechar o pedido
+            </button>
         </footer>
 
-    </div>
+    </main>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     </body>
 </html>

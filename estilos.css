@@ -1,9 +1,13 @@
+body{
+    font-family: 'Roboto', sem serifa;
+    width: 100%;
+}
 *{
     box-sizing: border-box;
 }
-.corpo{
-    width: 100vw;
-    background-color: aquamarine;
+main{
+    width: 100%;
+    background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,43 +18,157 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color:#CF2B2B;
     position: fixed;
     top:0;
     left: 0;
 }
+.topo{
+    width:414px;
+    height: 92px;
+    padding: 8px 0px 18px 21px;
+    color: #FFFFFF;
+}
+.topo h1{
+    font-family:'Righteous', cursive;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+}
+.topo p{
+    font-size: 18px;
+    line-height: 21px;
+}
 .pagina{
     width: 414px;
     margin: 96px 0px 108px 0px;
-    background-color: tomato;
     display: flex;
     flex-direction: column;
 }
 .cardapio{
     margin: 27px 0px 0px 3px;
-    background-color: rgb(192, 192, 192);
 }
-h2{
+.cardapio h2{
     margin:0px 0px 17px 16px;
+    font-family:'Righteous', cursive;
+    font-size: 26px;
+    color: #333333;
+    letter-spacing: 0.018em;
+    line-height: 32px;
 }
 .alimentos{
     display: flex;
-    background-color: violet;
     overflow: scroll;
 }
 .alimento{
     width: 172px;
-    height: 202px;
     margin-left: 16px;
-    background-color: yellow;
+    background-color: #FFFFFF;
     padding: 18px 8px 18px 8px;
     border-radius: 9px;
-    border: 6px solid red;
+    border: 6px solid #FFFFFF;
 }
+.alimento h3{
+    margin-top: 8px;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+.info{
+    margin-top: 4px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+.preco{
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
 img{
     width: 144px;
     height: 87px;
+    border-radius: 4px;
 }
+.conferirPedido{
+    position: fixed;
+    width: 100%;
+    left: 0;top: 0px;right: 0;bottom: 0;
+    height: 100%;
+    background-color: rgb(0,0,0,0.6);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conferindo{
+    width: 377px;
+    height: 353px;
+    background: #50D074;
+    border-radius: 9px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 21px 25px 2px 25px;
+}
+.conferindo h2{
+    margin-bottom: 28px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.conferindo p{
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+}
+.conferindo strong{
+    font-weight: 700;
+}
+.detalhesPedido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.valoresFinais{
+    text-align: end;
+}
+.tudoCerto{
+    margin-top: 11px;
+    width: 329px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 130px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #50D074;
+    border: none;
+}
+.cancelar{
+    width: 329px;
+    height: 100px;
+    background: #50D074;
+    border-radius: 130px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    border: none;
+}
+
 footer{
     width: 100%;
     height: 92px;
@@ -58,10 +176,71 @@ footer{
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: rgb(255, 0, 0);
+    background-color: #CF2B2B;
     bottom: 0;
     left: 0;
 }
 .escolhido{
-    border: 6px solid green;
+    border: 6px solid #32B72F;
+}
+
+.botaoConfirmar{
+    font-size: 20px;
+    line-height:23,44px;
+    background-color: #CBCBCB;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.018em;
+    Width:364px;
+    height: 61px;
+    border-radius: 50px;
+    border:none;
+}
+.acionarBotao{
+    background-color: #32B72F;
+    font-weight: 700;
+}
+.sacola{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-start-start-radius: 20px;
+}
+.sacola p{
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+}
+.carrinho{
+    color: red;
+    font-size: 30px;
+    transform:rotateY(180deg);
+}
+
+
+.escondido{
+    display: none;
+}
+.animacao{
+    animation:fade 0.5s linear;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.animacao2{
+    animation:transform 0.5s linear;
+}
+@keyframes transform{
+    0%{transform: translateX(100px);}
+    40%{transform: translateX(-20px);}
+    80%{transform: translateX(-30px);}
+    100%{transform: translateX(0px);}
 }
