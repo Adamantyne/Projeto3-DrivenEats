@@ -1,0 +1,14 @@
+@media(max-width: 414px){
+    .pagina{
+        width: 100vw;
+    }
+    .topo{
+        width: 100vw;
+    }
+    .sacola{
+        display: none;
+    }
+    .rodape{
+        width: 100vw;
+    }
+}
