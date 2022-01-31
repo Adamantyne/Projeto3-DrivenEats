@@ -14,6 +14,39 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.abertura{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.gif{
+    width: 414px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+}
+.entrar{
+    position: absolute;
+    top: 300px;
+    width: 100px;
+    height: 30px;
+    background: white;
+    border-radius: 130px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #CF2B2B;
+    border: solid 1px #CF2B2B;;
+
+}
 header{
     width: 100%;
     height: 92px;
@@ -215,9 +248,9 @@ footer{
     align-items: center;
     overflow: hidden;
     position: fixed;
-    top: 40px;
+    top: 50px;
     right: 0;
-    width: 100px;
+    width: 80px;
     height: 40px;
     z-index: 2;
     background-color: #FFFFFF;
@@ -227,11 +260,11 @@ footer{
 .sacola p{
     font-weight: 700;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
 }
 .carrinho{
     color: red;
-    font-size: 30px;
+    font-size: 25px;
     transform:rotateY(180deg);
 }
 

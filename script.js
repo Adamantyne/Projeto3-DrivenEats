@@ -87,8 +87,13 @@ function cancelar(){
     conferindo.classList.add("escondido");
 }
 function confirmar(){
-    mensagem="De "+nomeCliente+"\n"+"Eu gostaria de pedir os seguintes produtos: 1x sanduiche: "+pratosEscolhidos[0].innerHTML+", 1x "+pratosEscolhidos[1].innerHTML+" /"+sabor+" e 1x "+pratosEscolhidos[2].innerHTML+", para o endereço: "+endereco;
+    mensagem="Cliente: "+nomeCliente+", "+"Eu gostaria de pedir os seguintes produtos: 1x sanduiche: "+pratosEscolhidos[0].innerHTML+", 1x "+pratosEscolhidos[1].innerHTML+" /"+sabor+" e 1x "+pratosEscolhidos[2].innerHTML+", para o endereço: "+endereco;
     let encoded = encodeURIComponent(mensagem);
     window.open("https://wa.me/+5562995445555?text="+encoded);
 }
-
+function entrar(){
+    let abertura = document.querySelector(".abertura");
+    abertura.classList.add("escondido");
+    let aparecer = document.querySelector(".aparecer");
+    aparecer.classList.remove("escondido");
+}
