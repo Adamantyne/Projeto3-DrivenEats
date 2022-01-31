@@ -5,10 +5,10 @@
     .topo{
         width: 100vw;
     }
-    .sacola{
-        display: none;
-    }
     .rodape{
         width: 100vw;
+    }
+    .main{
+        width: 100vh;
     }
 }
