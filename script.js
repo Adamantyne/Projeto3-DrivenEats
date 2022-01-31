@@ -91,9 +91,3 @@ function confirmar(){
     let encoded = encodeURIComponent(mensagem);
     window.open("https://wa.me/+5562995445555?text="+encoded);
 }
-function entrar(){
-    let abertura = document.querySelector(".abertura");
-    abertura.classList.add("escondido");
-    let aparecer = document.querySelector(".aparecer");
-    aparecer.classList.remove("escondido");
-}

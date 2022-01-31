@@ -16,13 +16,7 @@
     </head>
 
     <body>
-        <section class="abertura">
-            <img class="gif" src="Imagens/GIF_DrivenEats.gif" alt="">
-            <button class="entrar" onclick="entrar()">
-                Entrar
-            </button>
-        </section>
-    <main class="aparecer escondido">
+    <main>
         <header>
             <div class="topo">
                 <h1>DrivenEats</h1>
@@ -33,94 +27,97 @@
         <div class="pagina">
             <section class="cardapio">
                 <h2>Primeiro, seu prato:</h2>
-                <div class="alimentos comida">
-                    <div class="alimento Completo" 
+                <div data-identifier="dishes" class="alimentos comida">
+                    <div data-identifier="food-option" class="alimento Completo" 
                     onclick="escolherComida(this,25,'Completo')">
                         <img src="Imagens/Bacon.png" alt="">
-                        <h3>Completo</h3>
+                        <h3 data-identifier="food-title">Completo</h3>
                         <p class="info">O mais completo e saboroso hamburger!</p>
-                        <p class="preco">R$ 25,00</p>
+                        <p data-identifier="food-price" class="preco">R$ 25,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div> 
 
-                    <div class="alimento Frango" 
+                    <div data-identifier="food-option" class="alimento Frango" 
                     onclick="escolherComida(this,23,'Frango')">
                         <img src="Imagens/frango.png" alt="">
-                        <h3>Frango</h3>
+                        <h3 data-identifier="food-title">Frango</h3>
                         <p class="info">Para aqueles que gostam de frango</p>
-                        <p class="preco">R$ 23,00</p>
+                        <p data-identifier="food-price" class="preco">R$ 23,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
 
-                    <div class="alimento Hamburguer" 
+                    <div data-identifier="food-option" class="alimento Hamburguer" 
                     onclick="escolherComida(this,21,'Hamburger')">
                         <img src="Imagens/kids.png" alt="">
-                        <h3>Hamburguer</h3>
+                        <h3 data-identifier="food-title">Hamburguer</h3>
                         <p class="info">Com bastante cheddar</p>
-                        <p class="preco">R$ 21,00</p>
+                        <p data-identifier="food-price" class="preco">R$ 21,00</p>
+                        <ion-icon class="check " name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </section>
             <section class="cardapio">
                 <h2>Agora, sua bebida:</h2>
-                <div class="alimentos bebida">
-                    <div class="alimento Refrigerantes" 
+                <div data-identifier="drinks" class="alimentos bebida">
+                    <div data-identifier="food-option" class="alimento Refrigerantes" 
                     onclick="escolherBebida(this,8,'Refrigerante')">
                         <img src="Imagens/Refrigerantes.png" alt="">
-                        <h3>Refrigerantes</h3>
+                        <h3 data-identifier="food-title">Refrigerantes</h3>
                         <p class="info"> 700ml de Refrigerante</p>
-                        <p class="preco">R$ 8,00</p>
-                        <p></p>
+                        <p data-identifier="food-price" class="preco">R$ 8,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="alimento Sucos"
+                    <div data-identifier="food-option" class="alimento Sucos"
                     onclick="escolherBebida(this,9,'Suco')">
                         <img src="Imagens/Suco_laranja.png" alt="">
-                        <h3>Sucos</h3>
+                        <h3 data-identifier="food-title">Sucos</h3>
                         <p class="info"> 700ml de suco natural</p>
-                        <p class="preco">R$ 9,00</p>
-                        <p></p>
+                        <p data-identifier="food-price" class="preco">R$ 9,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="alimento chopp"
+                    <div data-identifier="food-option" class="alimento chopp"
                     onclick="escolherBebida(this,12,'chopp')">
                         <img src="Imagens/chopp.png" alt="">
-                        <h3>chopp</h3>
+                        <h3 data-identifier="food-title">chopp</h3>
                         <p class="info"> 700ml do melhor chopp</p>
-                        <p class="preco">R$ 12,00</p>
-                        <p></p>
+                        <p data-identifier="food-price" class="preco">R$ 12,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </section>
             <section class="cardapio">
                 <h2>Por fim, sua sobremesa:</h2>
-                <div class="alimentos sobremesa">
-                    <div class="alimento Milkshake"
+                <div data-identifier="desserts" class="alimentos sobremesa">
+                    <div data-identifier="food-option" class="alimento Milkshake"
                     onclick="escolherSobremesa(this,11,'Milkshake')">
                         <img src="Imagens/Milkshake.png" alt="">
-                        <h3>Milkshake</h3>
+                        <h3 data-identifier="food-title">Milkshake</h3>
                         <p class="info"> 700ml de Milkshake</p>
-                        <p class="preco">R$ 11,00</p>
-                        <p></p>
+                        <p data-identifier="food-price" class="preco">R$ 11,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="alimento PetitGateau"
+                    <div data-identifier="food-option" class="alimento PetitGateau"
                     onclick="escolherSobremesa(this,14,'PetitGateau')">
                         <img src="Imagens/PetitGateau.png" alt="">
-                        <h3>PetitGateau</h3>
+                        <h3 data-identifier="food-title">PetitGateau</h3>
                         <p class="info"> Delicioso PetitGateau</p>
-                        <p class="preco">R$ 14,00</p>
-                        <p></p>
+                        <p data-identifier="food-price" class="preco">R$ 14,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
-                    <div class="alimento Sundae"
+                    <div data-identifier="food-option" class="alimento Sundae"
                     onclick="escolherSobremesa(this,10,'Sundae')">
                         <img src="Imagens/Sundae.png" alt="">
-                        <h3>Sundae</h3>
+                        <h3 data-identifier="food-title">Sundae</h3>
                         <p class="info"> 500ml de Sundae</p>
-                        <p class="preco">R$ 10,00</p>
-                        <p></p>
+                        <p data-identifier="food-price" class="preco">R$ 10,00</p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
             </section>
         </div>
 
         <section class="conferirPedido animacao escondido">
-            <div class="conferindo animacao">
+            <div data-identifier="confirmation-dialog" class="conferindo animacao">
                 <h2><strong>Confirme seu pedido</strong></h2>
                 <div class="detalhesPedido">
                     <div class="pratosEscolhidos">
